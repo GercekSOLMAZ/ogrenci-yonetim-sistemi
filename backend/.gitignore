@@ -1,0 +1,38 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.log
+
+### IDEs ###
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Build ###
+build/
+
+### Secrets & Environment ###
+src/main/resources/application.properties
+.env
+.env.local
+.env.*.local
+
+# debug logs 
+debug_log.txt
+run_output.txt
