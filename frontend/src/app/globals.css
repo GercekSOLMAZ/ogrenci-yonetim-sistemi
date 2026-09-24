@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-outfit), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-500 text-white px-4 py-2 rounded-lg font-medium transition-all;
+  }
+
+  .btn-primary:hover {
+    @apply opacity-90;
+  }
+
+  .btn-primary:active {
+    @apply scale-95;
+  }
+
+  .btn-primary:disabled {
+    @apply opacity-50;
+  }
+
+  .card {
+    @apply bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 rounded-lg border border-slate-300 transition-all;
+  }
+
+  .input-field:focus {
+    @apply outline-none ring-2 ring-indigo-200 border-indigo-500;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.05), transparent),
+              radial-gradient(circle at bottom left, rgba(236, 72, 153, 0.05), transparent);
+}
